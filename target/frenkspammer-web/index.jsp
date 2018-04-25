@@ -1,10 +1,8 @@
-<%@page import="nl.hu.sie.bep.friendspammer.EmailSender"%>
+<%@ page import="com.example.project.EmailSender" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    
-    
-<%
 
+<%
 	if (request.getParameter("methode") != null && request.getParameter("methode").equals("email")) {
 		String subject = request.getParameter("onderwerp");
 		String to = request.getParameter("aan");
@@ -18,9 +16,7 @@
 		} else {
 			EmailSender.sendEmail(subject, to, message, html);
 		}
-	
 	}
-
 %>    
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -30,7 +26,7 @@
 <title>Welcome!</title>
 </head>
 <body>
-<h1>Friend Spammer!</h1>
+<h1>Frenk Spammer</h1>
 <p>Hier kan je email naar al je vrienden! Bij aan kan je één enkele emailadres opgeven maar je kan er ook een comma seperated lijst opgeven.</p>
 
 <form method="post">
