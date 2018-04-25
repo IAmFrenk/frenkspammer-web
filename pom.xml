@@ -10,6 +10,19 @@
     <name>frenkspammer-web Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
+    <repositories>
+            <repository>
+                <id>IAmFrenk-frenkspammer-repositories</id>
+                <url>https://packagecloud.io/priv/$0836f20a4063285e42b61cfa38846f124320d8c74fbdb1d0/IAmFrenk/frenkspammer-repositories/maven2</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -22,6 +35,7 @@
             <artifactId>frenkspammer-helper</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
