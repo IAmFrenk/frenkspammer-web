@@ -13,7 +13,7 @@
     <repositories>
             <repository>
                 <id>IAmFrenk-frenkspammer-repositories</id>
-                <url>https://packagecloud.io/priv/edd8c22bab1e43f09a861275a6fd9630fb1d7a729a1ba3c1/IAmFrenk/frenkspammer-repositories/maven2</url>
+                <url>https://packagecloud.io/IAmFrenk/frenkspammer-repositories/maven2</url>
                 <releases>
                     <enabled>true</enabled>
                 </releases>
